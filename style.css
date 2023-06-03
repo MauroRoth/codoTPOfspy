@@ -1,0 +1,59 @@
+:root {
+  --about-color: #e7be21;
+  --biography-color: #46b933; 
+  --work-color: #e86209;
+  --contact-color: #75bbff;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+h1 {
+    font-size: 75px;
+}
+h2 {
+    font-size: 60px;
+}
+#hero {
+    margin: 0;
+    padding: 0;
+    grid-column: 1/2;
+    background-color: black;
+    color: white;
+
+	width: 50%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+ul {
+    display: flex;
+}
+img {
+    width: 100%;
+}
+main {
+    margin: 0;
+    padding: 0;
+    grid-column: 2/3;
+}
+#about, #biography, #work, #contact {
+    margin: 0;
+    padding: 1em;
+}
+#about {
+    background-color: var(--about-color);
+}
+#biography {
+    background-color: var(--biography-color);
+}
+#work {
+    background-color: var(--work-color);
+}
+#contact {
+    background-color: var(--contact-color);
+}
