@@ -1,0 +1,114 @@
+
+.input-group {
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-input {
+  height: 50px;
+  padding: 15px;
+  border: 0px solid #000;
+  background-color: #000;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-input:focus {
+  border-width: 0px;
+  background-color: #e7be21;
+  color: #000;
+}
+
+.form-input:focus-visible {
+  color: #000;
+}
+
+.form-input[data-wf-focus-visible] {
+  color: #000;
+}
+
+.form-input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-input::-ms-input-placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-input::placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-input.form-textarea {
+  height: 200px;
+}
+
+.form-input.form-textarea:focus {
+  color: #000;
+}
+
+.button-black {
+  z-index: 1;
+  padding: 12px 30px;
+  background-color: #000;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-black:hover {
+  background-color: #e86209;
+}
+
+.contact-section {
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 40px;
+  background-color: #75bbff;
+}
+
+.contact-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.contact-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contact-link {
+  margin-top: 10px;
+  color: #000;
+}

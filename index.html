@@ -8,8 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+    <!-- flaticon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cube.css">
+    <link rel="stylesheet" href="contact-form.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/cube_111065.png" type="image/x-icon">
     <!-- title -->
     <title>Mauro Roth</title>
 </head>
@@ -24,8 +30,33 @@
                 <li>Contact</li>
             </ul>
         </nav>
+        <div class="social-link">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fi fi-brands-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fi fi-brands-instagram"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fi fi-brands-twitter"></i>
+            </a>
+            <a href="https://pinterest.com/" target="_blank">
+                <i class="fi fi-brands-pinterest"></i>
+            </a>
+        </div>
         <h1 id="header-title">Mauro Roth</h1>
-        <img src="img/undraw_programming_re_kg9v.svg" alt="" id="header-image">
+        <div class="cube-container spin">
+            <div class="cube">
+                <figure class="side front"></figure>
+                <figure class="side back"></figure>
+                <figure class="side left"></figure>
+                <figure class="side right"></figure>
+                <figure class="side top"></figure>
+                <figure class="side bottom"></figure>
+            </div>
+        </div>
+        <div id="quote-content"></div>
+        <div id="quote-author"></div>
     </header>
     <main>
         <div id="about">
@@ -63,32 +94,37 @@
         </div>
         <div id="contact">
             <h2>Contato</h2>
-            <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get" aria-label="Contact Form">
+            <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get"
+                aria-label="Contact Form">
 
                 <div class="input-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-input w-input" maxlength="256" name="name" data-name="Name" placeholder="" id="name">
+                    <input type="text" class="form-input w-input" maxlength="256" name="name" data-name="Name"
+                        placeholder="" id="name">
                 </div>
                 <div class="input-group">
                     <label for="email">Email Address</label>
-                    <input type="email" class="form-input w-input" maxlength="256" name="email" data-name="Email" placeholder="" id="email" required="">
+                    <input type="email" class="form-input w-input" maxlength="256" name="email" data-name="Email"
+                        placeholder="" id="email" required="">
                 </div>
                 <div class="input-group">
                     <label for="Phone">Phone Number</label>
-                    <input type="tel" class="form-input w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="" id="Phone">
+                    <input type="tel" class="form-input w-input" maxlength="256" name="Phone" data-name="Phone"
+                        placeholder="" id="Phone">
                 </div>
                 <div class="input-group">
                     <label for="Phone-2">Message</label>
-                    <textarea placeholder="" maxlength="5000"
-                        id="field" name="field" data-name="Field" class="form-input form-textarea w-input"></textarea>
+                    <textarea placeholder="" maxlength="5000" id="field" name="field" data-name="Field"
+                        class="form-input form-textarea w-input"></textarea>
                 </div>
                 <input type="submit" value="Submit" data-wait="Please wait..." class="button-black w-button">
             </form>
-           
+
 
             </form>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

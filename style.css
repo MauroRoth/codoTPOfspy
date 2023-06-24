@@ -1,193 +1,108 @@
 :root {
   --about-color: #e7be21;
-  --biography-color: #46b933; 
+  --biography-color: #46b933;
   --work-color: #e86209;
   --contact-color: #75bbff;
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    margin: 0;
-    padding: 0;
-    font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', monospace;
 }
+
 h1 {
-    font-size: 75px;
+  font-size: 75px;
 }
+
 h2 {
-    font-size: 60px;
+  font-size: 60px;
 }
+
 header {
-    margin: 0;
-    padding: 0;
-    grid-column: 1/2;
+  margin: 0;
+  padding: 0;
+  grid-column: 1/2;
 
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 
-    position: sticky; 
-    top: 0; 
-    height: 100vh; 
+  position: sticky;
+  top: 0;
+  height: 100vh;
 
-    text-align: center;
-}
-nav {
-   border: 1px solid #46b933; 
-}
-
-ul>li {
-    
-    list-style-type: none;
-    display: inline;
-    padding: 0.3em;
-    color: white;
-    font-size: 1.25em;
-    
-}
-#header-title {
-    text-align: center;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-}
-img {
-    width: 80%;
-    background-color: white;
-    padding: 1rem;
-}
-main {
-    margin: 0;
-    padding: 0;
-    grid-column: 2/3;
-}
-#about, #biography, #work, #contact {
-    margin: 0;
-    padding: 1em;
-}
-#about {
-    background-color: var(--about-color);
-}
-#biography {
-    background-color: var(--biography-color);
-}
-#work {
-    background-color: var(--work-color);
-}
-#contact {
-    background-color: var(--contact-color);
-}
-
-
-/* - - - - - - - - - - - - - */
-.input-group {
-  margin-bottom: 20px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.form-input {
-  height: 50px;
-  padding: 15px;
-  border: 0px solid #000;
-  background-color: #000;
-  -webkit-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
-  color: #fff;
-  font-size: 18px;
+
+header>div.cube-container{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+nav{
+  display: inline-block;
+}
+ul{
+  padding: 0;
+}
+ul>li {
+  list-style-type: none;
+  display: inline;
+  padding: 0.3em;
+  color: white;
+  font-size: 1.25em;
 }
 
-.form-input:focus {
-  border-width: 0px;
-  background-color: #e7be21;
-  color: #000;
-}
-
-.form-input:focus-visible {
-  color: #000;
-}
-
-.form-input[data-wf-focus-visible] {
-  color: #000;
-}
-
-.form-input::-webkit-input-placeholder {
-  color: #fff;
-  font-size: 18px;
-}
-
-.form-input:-ms-input-placeholder {
-  color: #fff;
-  font-size: 18px;
-}
-
-.form-input::-ms-input-placeholder {
-  color: #fff;
-  font-size: 18px;
-}
-
-.form-input::placeholder {
-  color: #fff;
-  font-size: 18px;
-}
-
-.form-input.form-textarea {
-  height: 200px;
-}
-
-.form-input.form-textarea:focus {
-  color: #000;
-}
-.button-black {
-  z-index: 1;
-  padding: 12px 30px;
-  background-color: #000;
-  -webkit-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
-  color: #fff;
+#header-title {
   text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  grid-column: 2/3;
+}
+
+#about,
+#biography,
+#work,
+#contact {
+  margin: 0;
+  padding: 1em;
+}
+
+#about {
+  background-color: var(--about-color);
+}
+
+#biography {
+  background-color: var(--biography-color);
+}
+
+#work {
+  background-color: var(--work-color);
+}
+
+#contact {
+  background-color: var(--contact-color);
+}
+
+.social-link{
+  width: 100%;
+}
+a{
   text-decoration: none;
-}
-
-.button-black:hover {
-  background-color: #e86209;
-}
-
-.contact-section {
-  min-height: 100vh;
-  min-width: 100%;
-  padding: 40px;
-  background-color: #75bbff;
-}
-
-.contact-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-}
-
-.contact-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.contact-link {
-  margin-top: 10px;
-  color: #000;
+  font-size: 20px;
+  padding: 0 5%;
+  margin-top: 10%;
+  color: gray;
 }
