@@ -10,7 +10,6 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   font-family: 'Inconsolata', monospace;
 }
 
@@ -99,10 +98,27 @@ main {
 .social-link{
   width: 100%;
 }
-a{
+.a-social{
   text-decoration: none;
   font-size: 20px;
   padding: 0 5%;
   margin-top: 10%;
   color: gray;
+}
+a {
+  text-decoration: none;
+  color: #e7be21;
+}
+
+@media (max-width:850px){
+  body{
+    grid-template-columns: 1fr;
+  }
+  header{
+    grid-column: 1/-1;
+    position: relative;
+  }
+  main{
+    grid-column: 1/-1;
+  }
 }
