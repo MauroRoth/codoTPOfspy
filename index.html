@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cube.css">
     <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="img/cube_111065.png" type="image/x-icon">
     <!-- title -->
@@ -22,41 +23,44 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#biography">Biography</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="social-link">
-            <a class="a-social" href="https://www.facebook.com/" target="_blank">
-                <i class="fi fi-brands-facebook"></i>
-            </a>
-            <a class="a-social" href="https://www.instagram.com/" target="_blank">
-                <i class="fi fi-brands-instagram"></i>
-            </a>
-            <a class="a-social" href="https://twitter.com/" target="_blank">
-                <i class="fi fi-brands-twitter"></i>
-            </a>
-            <a class="a-social" href="https://pinterest.com/" target="_blank">
-                <i class="fi fi-brands-pinterest"></i>
-            </a>
-        </div>
-        <h1 id="header-title">Mauro Roth</h1>
-        <div class="cube-container spin">
-            <div class="cube">
-                <figure class="side front"></figure>
-                <figure class="side back"></figure>
-                <figure class="side left"></figure>
-                <figure class="side right"></figure>
-                <figure class="side top"></figure>
-                <figure class="side bottom"></figure>
+        <div class="fijo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-link">
+                <a class="a-social" href="https://www.facebook.com/" target="_blank">
+                    <i class="fi fi-brands-facebook"></i>
+                </a>
+                <a class="a-social" href="https://www.instagram.com/" target="_blank">
+                    <i class="fi fi-brands-instagram"></i>
+                </a>
+                <a class="a-social" href="https://twitter.com/" target="_blank">
+                    <i class="fi fi-brands-twitter"></i>
+                </a>
+                <a class="a-social" href="https://pinterest.com/" target="_blank">
+                    <i class="fi fi-brands-pinterest"></i>
+                </a>
             </div>
+            <h1 id="header-title">Mauro Roth</h1>
+            <div class="cube-container spin">
+                <div class="cube">
+                    <figure class="side front"></figure>
+                    <figure class="side back"></figure>
+                    <figure class="side left"></figure>
+                    <figure class="side right"></figure>
+                    <figure class="side top"></figure>
+                    <figure class="side bottom"></figure>
+                </div>
+            </div>
+            <div id="quote-content"></div>
+            <div id="quote-author"></div>
+
         </div>
-        <div id="quote-content"></div>
-        <div id="quote-author"></div>
     </header>
     <main>
         <div id="about">
@@ -91,23 +95,30 @@
                 hic numquam optio aliquam dolorem beatae odit nisi pariatur doloribus perferendis unde iusto quo,
                 quisquam aspernatur! Ipsum eaque consequatur consequuntur natus commodi ullam laborum? Cum quidem,
                 laudantium distinctio veritatis iste a laboriosam odit nobis totam.</p>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.1654826074237!2d-60.44826432534706!3d-26.770994487295923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94412c5578053abb%3A0x481cf4ce6cc54dd2!2sEES%20N%C2%B0%2053%20%22CORONEL%20MANUEL%20DORREGO%22!5e0!3m2!1ses-419!2sar!4v1688438945853!5m2!1ses-419!2sar"
+                    width="95%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
         <div id="contact">
             <h2>Contact</h2>
             <form data-name="Contact Form" method="get" aria-label="Contact Form">
                 <div class="input-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-input" maxlength="256" name="name" data-name="Name" placeholder="" id="name">
+                    <input type="text" class="form-input" maxlength="256" name="name" data-name="Name" placeholder=""
+                        id="name">
                 </div>
                 <div class="input-group">
                     <label for="email">Email Address</label>
-                    <input type="email" class="form-input" maxlength="256" name="email" data-name="Email"
-                        placeholder="" id="email" required="">
+                    <input type="email" class="form-input" maxlength="256" name="email" data-name="Email" placeholder=""
+                        id="email" required="">
                 </div>
                 <div class="input-group">
                     <label for="Phone">Phone Number</label>
-                    <input type="tel" class="form-input" maxlength="256" name="Phone" data-name="Phone"
-                        placeholder="" id="Phone">
+                    <input type="tel" class="form-input" maxlength="256" name="Phone" data-name="Phone" placeholder=""
+                        id="Phone">
                 </div>
                 <div class="input-group">
                     <label for="Phone-2">Message</label>
@@ -118,6 +129,7 @@
             </form>
         </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,22 @@
+@media (min-width: 851px) and (max-width: 1024px){ 
+  body{
+      grid-template-columns: 1fr 1fr;
+  }  
+  main{
+    grid-template-columns: 1fr;
+  }  
+}
+
+@media (max-width:850px){
+  body{
+    grid-template-columns: 1fr;
+  }
+  header{
+    grid-column: 1/-1;
+    position: relative;
+  }
+  main{
+    grid-template-columns: 1fr;
+    grid-column: 1/-1;
+  }
+}

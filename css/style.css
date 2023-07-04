@@ -8,13 +8,16 @@
 body {
   margin: 0;
   padding: 0;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
   font-family: 'Inconsolata', monospace;
 }
 
 h1 {
   font-size: 75px;
+  text-shadow: #CCC 1px 0 10px;
 }
 
 h2 {
@@ -25,14 +28,14 @@ header {
   margin: 0;
   padding: 0;
   grid-column: 1/2;
-
   background-color: black;
+  top: 0;
+}
+.fijo{
   color: white;
-
   position: sticky;
   top: 0;
-  height: 100vh;
-
+  
   text-align: center;
   
   display: flex;
@@ -67,9 +70,12 @@ ul>li {
 
 main {
   margin: 0;
-  padding: 0;
-  grid-column: 2/3;
+  padding: 0;  
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
 
 #about,
 #biography,
@@ -89,6 +95,13 @@ main {
 
 #work {
   background-color: var(--work-color);
+  display: flex;
+  flex-direction: column;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact {
@@ -108,17 +121,4 @@ main {
 a {
   text-decoration: none;
   color: #e7be21;
-}
-
-@media (max-width:850px){
-  body{
-    grid-template-columns: 1fr;
-  }
-  header{
-    grid-column: 1/-1;
-    position: relative;
-  }
-  main{
-    grid-column: 1/-1;
-  }
 }
